@@ -1,0 +1,6 @@
+{
+  "name": "MedLocate - Real-Time Medicine Availability Finder",
+  "description": "Locate in-stock medicines, compare pharmacy prices, find verified generic alternatives, check 24/7 pharmacies, and reserve critical prescriptions near you in real time.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
