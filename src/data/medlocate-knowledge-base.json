@@ -1,0 +1,544 @@
+{
+  "system_identity": {
+    "app_name": "MedLocate",
+    "purpose": "Real-Time Medicine Availability Finder, Pharmacy Locator, and Clinical Generic Equivalence Guide",
+    "location_coverage": "San Francisco Bay Area / Metro Downtown (94108 & surrounding zip codes)",
+    "key_capabilities": [
+      "Check live shelf stock counts across retail, independent, and hospital pharmacies",
+      "Recommend FDA Orange Book AB-rated bioequivalent generic alternatives with cost savings",
+      "Direct patients to 24/7 and emergency hospital pharmacies for urgent prescriptions",
+      "Provide clinical storage rules (e.g. cold-chain refrigeration for insulin/GLP-1)",
+      "Screen known drug-drug interactions and prescription requirements (Rx vs OTC)",
+      "Issue 3-hour hold reservations for in-stock medications"
+    ]
+  },
+  "pharmacies": [
+    {
+      "id": "pharma-1",
+      "name": "WellCare Central 24/7 Pharmacy",
+      "type": "Independent Community Pharmacy",
+      "address": "450 Sutter St, Suite 102",
+      "city": "San Francisco",
+      "postal_code": "94108",
+      "distance_miles": 0.6,
+      "phone": "(415) 890-2470",
+      "operating_hours": "Open 24 Hours / 7 Days a week",
+      "is_open_24_hours": true,
+      "is_open_now": true,
+      "has_drive_thru": false,
+      "has_home_delivery": true,
+      "delivery_estimated_mins": 45,
+      "has_cold_storage_cert": true,
+      "wheelchair_accessible": true,
+      "rating": 4.8,
+      "review_count": 312
+    },
+    {
+      "id": "pharma-2",
+      "name": "St. Mary Regional Hospital Outpatient Rx",
+      "type": "Hospital Outpatient Pharmacy",
+      "address": "2255 Hayes Street, Ground Floor",
+      "city": "San Francisco",
+      "postal_code": "94117",
+      "distance_miles": 1.4,
+      "phone": "(415) 750-5740",
+      "operating_hours": "Open 24 Hours for Emergency Discharge & Walk-in",
+      "is_open_24_hours": true,
+      "is_open_now": true,
+      "has_drive_thru": false,
+      "has_home_delivery": false,
+      "has_cold_storage_cert": true,
+      "wheelchair_accessible": true,
+      "rating": 4.9,
+      "review_count": 428,
+      "special_notes": "Maintains priority emergency stock for critical shortages."
+    },
+    {
+      "id": "pharma-3",
+      "name": "Walgreens Pharmacy #3711",
+      "type": "Retail Chain Pharmacy",
+      "address": "135 Powell St",
+      "city": "San Francisco",
+      "postal_code": "94102",
+      "distance_miles": 0.8,
+      "phone": "(415) 391-7222",
+      "operating_hours": "8:00 AM – 10:00 PM Daily",
+      "is_open_24_hours": false,
+      "is_open_now": true,
+      "closes_at": "10:00 PM",
+      "has_drive_thru": true,
+      "has_home_delivery": true,
+      "delivery_estimated_mins": 60,
+      "has_cold_storage_cert": true,
+      "wheelchair_accessible": true,
+      "rating": 4.2,
+      "review_count": 194
+    },
+    {
+      "id": "pharma-4",
+      "name": "Mission Community Apothecary & Compounding",
+      "type": "Independent Compounding Pharmacy",
+      "address": "2490 Mission Street",
+      "city": "San Francisco",
+      "postal_code": "94110",
+      "distance_miles": 2.1,
+      "phone": "(415) 648-2890",
+      "operating_hours": "9:00 AM – 7:30 PM",
+      "is_open_24_hours": false,
+      "is_open_now": true,
+      "closes_at": "7:30 PM",
+      "has_drive_thru": false,
+      "has_home_delivery": true,
+      "delivery_estimated_mins": 35,
+      "has_cold_storage_cert": true,
+      "wheelchair_accessible": true,
+      "rating": 4.9,
+      "review_count": 280
+    },
+    {
+      "id": "pharma-5",
+      "name": "CVS Pharmacy #9188 Drive-Thru",
+      "type": "Retail Chain Pharmacy",
+      "address": "701 Van Ness Ave",
+      "city": "San Francisco",
+      "postal_code": "94102",
+      "distance_miles": 1.1,
+      "phone": "(415) 841-5564",
+      "operating_hours": "7:00 AM – Midnight",
+      "is_open_24_hours": false,
+      "is_open_now": true,
+      "closes_at": "Midnight",
+      "has_drive_thru": true,
+      "has_home_delivery": true,
+      "delivery_estimated_mins": 50,
+      "has_cold_storage_cert": true,
+      "wheelchair_accessible": true,
+      "rating": 4.1,
+      "review_count": 165
+    },
+    {
+      "id": "pharma-6",
+      "name": "Pacific Heights Medical Pharmacy",
+      "type": "Independent Clinical Pharmacy",
+      "address": "2100 Webster St, Suite 105",
+      "city": "San Francisco",
+      "postal_code": "94115",
+      "distance_miles": 1.9,
+      "phone": "(415) 923-3886",
+      "operating_hours": "8:30 AM – 6:00 PM",
+      "is_open_24_hours": false,
+      "is_open_now": false,
+      "closes_at": "6:00 PM (Closed for today)",
+      "has_drive_thru": false,
+      "has_home_delivery": false,
+      "has_cold_storage_cert": true,
+      "wheelchair_accessible": true,
+      "rating": 4.7,
+      "review_count": 92
+    },
+    {
+      "id": "pharma-7",
+      "name": "Sunset HealthMart Drive-Thru",
+      "type": "Independent Community Pharmacy",
+      "address": "1801 Irving St",
+      "city": "San Francisco",
+      "postal_code": "94122",
+      "distance_miles": 3.8,
+      "phone": "(415) 664-8800",
+      "operating_hours": "8:00 AM – 9:00 PM",
+      "is_open_24_hours": false,
+      "is_open_now": true,
+      "closes_at": "9:00 PM",
+      "has_drive_thru": true,
+      "has_home_delivery": true,
+      "delivery_estimated_mins": 40,
+      "has_cold_storage_cert": false,
+      "wheelchair_accessible": true,
+      "rating": 4.6,
+      "review_count": 142
+    }
+  ],
+  "medicines": [
+    {
+      "id": "med-amox",
+      "brand_name": "Amoxil",
+      "generic_name": "Amoxicillin Trihydrate",
+      "category": "Antibiotics",
+      "available_strengths": ["250mg", "500mg", "875mg", "250mg/5mL oral suspension"],
+      "default_strength": "500mg",
+      "forms": ["Capsule", "Tablet", "Oral Suspension"],
+      "requires_prescription": true,
+      "description": "Broad-spectrum penicillin-class antibiotic prescribed for bacterial infections such as ear, nose, throat, skin, and respiratory tract infections.",
+      "primary_indications": ["Streptococcal pharyngitis", "Otitis media", "Skin infections", "Dental abscesses"],
+      "shortage_status": "regional_shortage",
+      "shortage_notes": "Pediatric suspension forms experiencing intermittent regional shortages; 500mg capsules widely stocked.",
+      "storage_instructions": "Store capsules at room temperature (20-25°C). Liquid suspension must be refrigerated after reconstitution.",
+      "interaction_warnings": [
+        "Reduces efficacy of oral contraceptives",
+        "Avoid alcohol to minimize gastrointestinal upset",
+        "Allergy alert: Cross-reactive with Cephalosporins in ~5% of patients"
+      ],
+      "generic_alternatives": [
+        {
+          "name": "Amoxicillin (Teva Pharmaceuticals)",
+          "manufacturer": "Teva Generics",
+          "strength": "500mg",
+          "average_price": 8.50,
+          "brand_price": 38.00,
+          "savings_percentage": 78,
+          "fda_equivalent_code": "AB (Therapeutically Equivalent)"
+        },
+        {
+          "name": "Amoxicillin (Sandoz/Novartis)",
+          "manufacturer": "Sandoz Inc",
+          "strength": "500mg",
+          "average_price": 9.20,
+          "brand_price": 38.00,
+          "savings_percentage": 76,
+          "fda_equivalent_code": "AB (Therapeutically Equivalent)"
+        }
+      ]
+    },
+    {
+      "id": "med-albuterol",
+      "brand_name": "Ventolin HFA",
+      "generic_name": "Albuterol Sulfate Inhalation Aerosol",
+      "category": "Respiratory",
+      "available_strengths": ["90 mcg/actuation (200 doses)", "90 mcg/actuation (60 doses)"],
+      "default_strength": "90 mcg/actuation (200 doses)",
+      "forms": ["Inhaler", "Nebulizer Solution"],
+      "requires_prescription": true,
+      "description": "Fast-acting bronchodilator rescue inhaler that relaxes airway muscles to relieve acute asthma spasms and COPD wheezing.",
+      "primary_indications": ["Acute asthma bronchospasm", "Exercise-induced bronchospasm", "COPD exacerbations"],
+      "shortage_status": "normal",
+      "storage_instructions": "Store canister between 15-25°C. Never expose to open flame or temperatures above 49°C.",
+      "interaction_warnings": [
+        "Avoid with non-selective beta-blockers (e.g. Propranolol)",
+        "May transiently increase heart rate (tachycardia)"
+      ],
+      "generic_alternatives": [
+        {
+          "name": "Albuterol Sulfate HFA (Prasco)",
+          "manufacturer": "Prasco Laboratories",
+          "strength": "90 mcg/actuation",
+          "average_price": 22.00,
+          "brand_price": 65.00,
+          "savings_percentage": 66,
+          "fda_equivalent_code": "AB (Authorized Generic Inhaler)"
+        },
+        {
+          "name": "ProAir HFA Equivalent (Teva)",
+          "manufacturer": "Teva Respiratory",
+          "strength": "90 mcg/actuation",
+          "average_price": 24.50,
+          "brand_price": 65.00,
+          "savings_percentage": 62,
+          "fda_equivalent_code": "AB rated"
+        }
+      ]
+    },
+    {
+      "id": "med-ozempic",
+      "brand_name": "Ozempic",
+      "generic_name": "Semaglutide Injection",
+      "category": "Diabetes",
+      "available_strengths": ["2mg/3mL (0.25mg/0.5mg dose pen)", "4mg/3mL (1mg dose pen)", "8mg/3mL (2mg dose pen)"],
+      "default_strength": "2mg/3mL (0.25mg/0.5mg dose pen)",
+      "forms": ["Prefilled Pen Injector"],
+      "requires_prescription": true,
+      "description": "Glucagon-like peptide-1 (GLP-1) receptor agonist prescribed to improve glycemic control in adults with type 2 diabetes mellitus and reduce cardiovascular risk.",
+      "primary_indications": ["Type 2 Diabetes Mellitus", "Cardiovascular risk reduction in T2D"],
+      "shortage_status": "critical_shortage",
+      "shortage_notes": "FDA National Drug Shortage list. Supply is allocated by distributors. Check hospital outpatient pharmacies and 24/7 pharmacies.",
+      "storage_instructions": "Strict cold-chain: Refrigerate at 2°C to 8°C prior to first use. In use pen can be kept at room temperature for up to 56 days.",
+      "interaction_warnings": [
+        "Delay in gastric emptying may affect absorption of concomitantly administered oral medications",
+        "Risk of hypoglycemia when combined with sulfonylureas or insulin"
+      ],
+      "generic_alternatives": []
+    },
+    {
+      "id": "med-metformin",
+      "brand_name": "Glucophage XR",
+      "generic_name": "Metformin Hydrochloride Extended-Release",
+      "category": "Diabetes",
+      "available_strengths": ["500mg", "750mg", "1000mg"],
+      "default_strength": "500mg",
+      "forms": ["Extended-Release Tablet", "Immediate-Release Tablet"],
+      "requires_prescription": true,
+      "description": "First-line biguanide oral medication for type 2 diabetes, decreasing hepatic glucose production and improving insulin sensitivity.",
+      "primary_indications": ["Type 2 Diabetes Mellitus", "Prediabetes prevention", "Polycystic ovary syndrome (off-label)"],
+      "shortage_status": "normal",
+      "storage_instructions": "Store in airtight light-resistant container at 20-25°C.",
+      "interaction_warnings": [
+        "Temporarily withhold before iodinated radiologic contrast procedures",
+        "Do not crush or chew extended-release formulation",
+        "Avoid excessive alcohol consumption (lactic acidosis risk)"
+      ],
+      "generic_alternatives": [
+        {
+          "name": "Metformin HCl ER (Lupin Pharmaceuticals)",
+          "manufacturer": "Lupin Pharma",
+          "strength": "500mg",
+          "average_price": 4.80,
+          "brand_price": 28.00,
+          "savings_percentage": 88,
+          "fda_equivalent_code": "AB (Bioequivalent)"
+        }
+      ]
+    },
+    {
+      "id": "med-atorvastatin",
+      "brand_name": "Lipitor",
+      "generic_name": "Atorvastatin Calcium",
+      "category": "Cardiovascular",
+      "available_strengths": ["10mg", "20mg", "40mg", "80mg"],
+      "default_strength": "20mg",
+      "forms": ["Film-Coated Tablet"],
+      "requires_prescription": true,
+      "description": "HMG-CoA reductase inhibitor (statin) used to lower LDL cholesterol, reduce blood triglycerides, and prevent cardiovascular events and stroke.",
+      "primary_indications": ["Hypercholesterolemia", "Coronary artery disease prevention", "Stroke risk reduction"],
+      "shortage_status": "normal",
+      "storage_instructions": "Store at 20-25°C in controlled room conditions.",
+      "interaction_warnings": [
+        "Avoid large quantities of grapefruit juice (CYP3A4 inhibitor)",
+        "Report unexplained muscle pain or tenderness immediately"
+      ],
+      "generic_alternatives": [
+        {
+          "name": "Atorvastatin Calcium (Biocon / Cipla)",
+          "manufacturer": "Biocon Pharma",
+          "strength": "20mg",
+          "average_price": 6.20,
+          "brand_price": 68.00,
+          "savings_percentage": 91,
+          "fda_equivalent_code": "AB (Therapeutically Equivalent)"
+        }
+      ]
+    },
+    {
+      "id": "med-adderall",
+      "brand_name": "Adderall XR",
+      "generic_name": "Dextroamphetamine-Amphetamine Mixed Salts",
+      "category": "Mental Health",
+      "available_strengths": ["10mg", "15mg", "20mg", "25mg", "30mg"],
+      "default_strength": "20mg",
+      "forms": ["Extended-Release Capsule"],
+      "requires_prescription": true,
+      "controlled_substance_schedule": "Schedule II (C-II DEA controlled)",
+      "description": "Central nervous system stimulant for Attention Deficit Hyperactivity Disorder (ADHD) and Narcolepsy.",
+      "primary_indications": ["ADHD", "Narcolepsy"],
+      "shortage_status": "regional_shortage",
+      "shortage_notes": "DEA quota limitations cause periodic regional supply gaps. State prescription registry check mandatory.",
+      "storage_instructions": "Store in secure, locked room temperature storage away from moisture and direct heat.",
+      "interaction_warnings": [
+        "Strictly contraindicated within 14 days of MAO inhibitors",
+        "Monitor blood pressure and resting heart rate",
+        "Do not alter or crush beads inside capsule"
+      ],
+      "generic_alternatives": [
+        {
+          "name": "Dextroamphetamine Mixed Salts ER (Sandoz)",
+          "manufacturer": "Sandoz Generics",
+          "strength": "20mg",
+          "average_price": 42.00,
+          "brand_price": 185.00,
+          "savings_percentage": 72,
+          "fda_equivalent_code": "AB (Bioequivalent)"
+        }
+      ]
+    },
+    {
+      "id": "med-lantus",
+      "brand_name": "Lantus SoloStar",
+      "generic_name": "Insulin Glargine recombinant",
+      "category": "Diabetes",
+      "available_strengths": ["100 units/mL (3mL SoloStar pen)", "100 units/mL (10mL vial)"],
+      "default_strength": "100 units/mL (3mL SoloStar pen)",
+      "forms": ["Prefilled Pen Injector", "Multi-dose Vial"],
+      "requires_prescription": true,
+      "description": "Long-acting, once-daily basal human insulin analogue providing smooth glycemic coverage for 24 hours.",
+      "primary_indications": ["Type 1 Diabetes Mellitus", "Type 2 Diabetes Mellitus requiring basal insulin"],
+      "shortage_status": "normal",
+      "storage_instructions": "Unopened pens MUST be refrigerated between 2°C and 8°C. Do not freeze. Opened pen can remain at room temperature (<30°C) for 28 days.",
+      "interaction_warnings": [
+        "Never mix or dilute with any other insulin or liquid solution",
+        "Rotate injection sites to avoid lipodystrophy"
+      ],
+      "generic_alternatives": [
+        {
+          "name": "Semglee (Insulin Glargine-yfgn Interchangeable Biosimilar)",
+          "manufacturer": "Viatris / Biocon",
+          "strength": "100 units/mL (3mL pen)",
+          "average_price": 58.00,
+          "brand_price": 195.00,
+          "savings_percentage": 65,
+          "fda_equivalent_code": "Interchangeable Biosimilar (Can substitute at counter without doctor rewrites)"
+        }
+      ]
+    },
+    {
+      "id": "med-paracetamol",
+      "brand_name": "Tylenol Extra Strength",
+      "generic_name": "Acetaminophen / Paracetamol",
+      "category": "Pain Relief",
+      "available_strengths": ["325mg", "500mg", "650mg 8-Hour Extended Relief"],
+      "default_strength": "500mg",
+      "forms": ["Caplet", "Gelcap", "Rapid Release Liquid Gel"],
+      "requires_prescription": false,
+      "description": "Over-the-counter analgesic and antipyretic for temporary relief of minor aches, pains, headaches, arthritis, and fever reduction.",
+      "primary_indications": ["Headache & Migraine", "Fever reduction", "Osteoarthritis ache", "Post-immunization soreness"],
+      "shortage_status": "normal",
+      "storage_instructions": "Store at room temperature 20-25°C away from excessive humidity.",
+      "interaction_warnings": [
+        "Maximum daily dose 3,000mg to 4,000mg to avoid severe liver injury",
+        "Do not combine with other acetaminophen-containing cough or cold products",
+        "Caution with alcohol consumption"
+      ],
+      "generic_alternatives": [
+        {
+          "name": "Acetaminophen 500mg Caplets (Generic / Store Brand)",
+          "manufacturer": "Perrigo Company",
+          "strength": "500mg",
+          "average_price": 4.50,
+          "brand_price": 14.50,
+          "savings_percentage": 68,
+          "fda_equivalent_code": "USP Monograph Compliant"
+        }
+      ]
+    },
+    {
+      "id": "med-augmentin",
+      "brand_name": "Augmentin",
+      "generic_name": "Amoxicillin and Clavulanate Potassium",
+      "category": "Antibiotics",
+      "available_strengths": ["500mg/125mg", "875mg/125mg", "250mg/62.5mg per 5mL suspension"],
+      "default_strength": "875mg/125mg",
+      "forms": ["Tablet", "Chewable Tablet", "Oral Suspension"],
+      "requires_prescription": true,
+      "description": "Combination antibacterial agent containing amoxicillin with the beta-lactamase inhibitor clavulanate, overcoming bacterial resistance.",
+      "primary_indications": ["Sinusitis", "Bacterial lower respiratory tract infection", "Skin infections", "Recurrent Otitis media"],
+      "shortage_status": "regional_shortage",
+      "shortage_notes": "High seasonal demand during respiratory infection peaks.",
+      "storage_instructions": "Store tablets in moisture-barrier blister packs at 25°C or below.",
+      "interaction_warnings": [
+        "Take at start of a meal to enhance absorption and reduce GI side effects",
+        "Contraindicated in history of amoxicillin-clavulanate associated cholestatic jaundice"
+      ],
+      "generic_alternatives": [
+        {
+          "name": "Amoxicillin / Clavulanate Potassium 875/125mg (Sandoz)",
+          "manufacturer": "Sandoz",
+          "strength": "875mg/125mg",
+          "average_price": 14.20,
+          "brand_price": 54.00,
+          "savings_percentage": 74,
+          "fda_equivalent_code": "AB (Bioequivalent)"
+        }
+      ]
+    }
+  ],
+  "live_inventory_matrix": [
+    {
+      "pharmacy_name": "WellCare Central 24/7 Pharmacy",
+      "pharmacy_id": "pharma-1",
+      "address": "450 Sutter St, Suite 102",
+      "phone": "(415) 890-2470",
+      "is_24_7": true,
+      "distance_miles": 0.6,
+      "inventory": [
+        { "medicine": "Amoxil (Amoxicillin)", "strength": "500mg", "status": "in_stock", "units_available": 42, "brand_price": 38.00, "generic_price": 8.50 },
+        { "medicine": "Ventolin HFA (Albuterol)", "strength": "90 mcg", "status": "in_stock", "units_available": 19, "brand_price": 65.00, "generic_price": 22.00 },
+        { "medicine": "Ozempic (Semaglutide)", "strength": "2mg/3mL", "status": "low_stock", "units_available": 2, "brand_price": 935.00, "generic_price": null },
+        { "medicine": "Metformin ER", "strength": "500mg", "status": "in_stock", "units_available": 230, "brand_price": 28.00, "generic_price": 4.80 },
+        { "medicine": "Lipitor (Atorvastatin)", "strength": "20mg", "status": "in_stock", "units_available": 88, "brand_price": 68.00, "generic_price": 6.20 },
+        { "medicine": "Adderall XR", "strength": "20mg", "status": "low_stock", "units_available": 5, "brand_price": 185.00, "generic_price": 42.00 },
+        { "medicine": "Lantus SoloStar (Insulin)", "strength": "100 u/mL", "status": "in_stock", "units_available": 14, "brand_price": 195.00, "generic_price": 58.00 },
+        { "medicine": "Tylenol (Acetaminophen)", "strength": "500mg", "status": "in_stock", "units_available": 85, "brand_price": 14.50, "generic_price": 4.50 },
+        { "medicine": "Augmentin (Amox/Clav)", "strength": "875/125mg", "status": "in_stock", "units_available": 22, "brand_price": 54.00, "generic_price": 14.20 }
+      ]
+    },
+    {
+      "pharmacy_name": "St. Mary Regional Hospital Outpatient Rx",
+      "pharmacy_id": "pharma-2",
+      "address": "2255 Hayes Street, Ground Floor",
+      "phone": "(415) 750-5740",
+      "is_24_7": true,
+      "distance_miles": 1.4,
+      "inventory": [
+        { "medicine": "Amoxil (Amoxicillin)", "strength": "500mg", "status": "in_stock", "units_available": 118, "brand_price": 34.00, "generic_price": 7.90 },
+        { "medicine": "Ventolin HFA (Albuterol)", "strength": "90 mcg", "status": "in_stock", "units_available": 44, "brand_price": 62.00, "generic_price": 21.00 },
+        { "medicine": "Ozempic (Semaglutide)", "strength": "2mg/3mL", "status": "in_stock", "units_available": 9, "brand_price": 920.00, "generic_price": null },
+        { "medicine": "Metformin ER", "strength": "500mg", "status": "in_stock", "units_available": 410, "brand_price": 26.00, "generic_price": 4.50 },
+        { "medicine": "Lipitor (Atorvastatin)", "strength": "20mg", "status": "in_stock", "units_available": 195, "brand_price": 65.00, "generic_price": 5.80 },
+        { "medicine": "Adderall XR", "strength": "20mg", "status": "in_stock", "units_available": 24, "brand_price": 175.00, "generic_price": 38.50 },
+        { "medicine": "Lantus SoloStar (Insulin)", "strength": "100 u/mL", "status": "in_stock", "units_available": 38, "brand_price": 188.00, "generic_price": 55.00 },
+        { "medicine": "Tylenol (Acetaminophen)", "strength": "500mg", "status": "in_stock", "units_available": 140, "brand_price": 13.99, "generic_price": 4.25 },
+        { "medicine": "Augmentin (Amox/Clav)", "strength": "875/125mg", "status": "in_stock", "units_available": 68, "brand_price": 49.00, "generic_price": 13.50 }
+      ]
+    },
+    {
+      "pharmacy_name": "Walgreens Pharmacy #3711",
+      "pharmacy_id": "pharma-3",
+      "address": "135 Powell St",
+      "phone": "(415) 391-7222",
+      "is_24_7": false,
+      "distance_miles": 0.8,
+      "inventory": [
+        { "medicine": "Amoxil (Amoxicillin)", "strength": "500mg", "status": "low_stock", "units_available": 4, "brand_price": 42.50, "generic_price": 9.80 },
+        { "medicine": "Ventolin HFA (Albuterol)", "strength": "90 mcg", "status": "in_stock", "units_available": 12, "brand_price": 71.00, "generic_price": 24.50 },
+        { "medicine": "Ozempic (Semaglutide)", "strength": "2mg/3mL", "status": "out_of_stock", "units_available": 0, "brand_price": 950.00, "generic_price": null },
+        { "medicine": "Metformin ER", "strength": "500mg", "status": "in_stock", "units_available": 85, "brand_price": 31.00, "generic_price": 5.20 },
+        { "medicine": "Lipitor (Atorvastatin)", "strength": "20mg", "status": "in_stock", "units_available": 64, "brand_price": 74.00, "generic_price": 6.80 },
+        { "medicine": "Adderall XR", "strength": "20mg", "status": "out_of_stock", "units_available": 0, "brand_price": 195.00, "generic_price": 45.00 },
+        { "medicine": "Lantus SoloStar (Insulin)", "strength": "100 u/mL", "status": "in_stock", "units_available": 9, "brand_price": 210.00, "generic_price": 62.00 },
+        { "medicine": "Tylenol (Acetaminophen)", "strength": "500mg", "status": "in_stock", "units_available": 60, "brand_price": 15.29, "generic_price": 4.99 },
+        { "medicine": "Augmentin (Amox/Clav)", "strength": "875/125mg", "status": "low_stock", "units_available": 3, "brand_price": 58.00, "generic_price": 15.50 }
+      ]
+    },
+    {
+      "pharmacy_name": "Mission Community Apothecary & Compounding",
+      "pharmacy_id": "pharma-4",
+      "address": "2490 Mission Street",
+      "phone": "(415) 648-2890",
+      "is_24_7": false,
+      "distance_miles": 2.1,
+      "inventory": [
+        { "medicine": "Amoxil (Amoxicillin)", "strength": "500mg", "status": "in_stock", "units_available": 26, "brand_price": 36.00, "generic_price": 8.20 },
+        { "medicine": "Ventolin HFA (Albuterol)", "strength": "90 mcg", "status": "low_stock", "units_available": 2, "brand_price": 63.50, "generic_price": 22.00 },
+        { "medicine": "Ozempic (Semaglutide)", "strength": "2mg/3mL", "status": "out_of_stock", "units_available": 0, "brand_price": 940.00, "generic_price": null },
+        { "medicine": "Metformin ER", "strength": "500mg", "status": "in_stock", "units_available": 120, "brand_price": 27.50, "generic_price": 4.80 },
+        { "medicine": "Lipitor (Atorvastatin)", "strength": "20mg", "status": "in_stock", "units_available": 42, "brand_price": 67.00, "generic_price": 6.10 },
+        { "medicine": "Adderall XR", "strength": "20mg", "status": "low_stock", "units_available": 2, "brand_price": 180.00, "generic_price": 41.00 },
+        { "medicine": "Lantus SoloStar (Insulin)", "strength": "100 u/mL", "status": "low_stock", "units_available": 2, "brand_price": 192.00, "generic_price": 58.00 },
+        { "medicine": "Tylenol (Acetaminophen)", "strength": "500mg", "status": "in_stock", "units_available": 35, "brand_price": 14.00, "generic_price": 4.50 },
+        { "medicine": "Augmentin (Amox/Clav)", "strength": "875/125mg", "status": "in_stock", "units_available": 15, "brand_price": 52.00, "generic_price": 14.00 }
+      ]
+    },
+    {
+      "pharmacy_name": "CVS Pharmacy #9188 Drive-Thru",
+      "pharmacy_id": "pharma-5",
+      "address": "701 Van Ness Ave",
+      "phone": "(415) 841-5564",
+      "is_24_7": false,
+      "distance_miles": 1.1,
+      "inventory": [
+        { "medicine": "Amoxil (Amoxicillin)", "strength": "500mg", "status": "in_stock", "units_available": 31, "brand_price": 41.00, "generic_price": 9.20 },
+        { "medicine": "Ventolin HFA (Albuterol)", "strength": "90 mcg", "status": "in_stock", "units_available": 15, "brand_price": 69.00, "generic_price": 23.00 },
+        { "medicine": "Ozempic (Semaglutide)", "strength": "2mg/3mL", "status": "low_stock", "units_available": 1, "brand_price": 960.00, "generic_price": null },
+        { "medicine": "Metformin ER", "strength": "500mg", "status": "in_stock", "units_available": 160, "brand_price": 29.50, "generic_price": 4.90 },
+        { "medicine": "Lipitor (Atorvastatin)", "strength": "20mg", "status": "in_stock", "units_available": 58, "brand_price": 72.00, "generic_price": 6.50 },
+        { "medicine": "Adderall XR", "strength": "20mg", "status": "out_of_stock", "units_available": 0, "brand_price": 190.00, "generic_price": 44.00 },
+        { "medicine": "Lantus SoloStar (Insulin)", "strength": "100 u/mL", "status": "in_stock", "units_available": 11, "brand_price": 205.00, "generic_price": 60.00 },
+        { "medicine": "Tylenol (Acetaminophen)", "strength": "500mg", "status": "in_stock", "units_available": 72, "brand_price": 14.99, "generic_price": 4.75 },
+        { "medicine": "Augmentin (Amox/Clav)", "strength": "875/125mg", "status": "low_stock", "units_available": 2, "brand_price": 56.00, "generic_price": 14.80 }
+      ]
+    }
+  ],
+  "reservation_policy": {
+    "duration_hours": 3,
+    "cost": "Free (No fee charged)",
+    "requirements": "Patient ID and valid prescription slip matching name required at counter",
+    "voucher_prefix": "HOLD-XXXX-ZIP"
+  }
+}

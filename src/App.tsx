@@ -23,6 +23,7 @@ import { StockAlertModal } from './components/StockAlertModal';
 import { DrugSafetyDrawer } from './components/DrugSafetyDrawer';
 import { MyReservationsModal } from './components/MyReservationsModal';
 import { PharmacistDashboard } from './components/PharmacistDashboard';
+import { N8nChatWidget } from './components/N8nChatWidget';
 import {
   Map,
   List,
@@ -105,6 +106,7 @@ export default function App() {
   const [isSafetyDrawerOpen, setIsSafetyDrawerOpen] = useState(false);
   const [isReservationsModalOpen, setIsReservationsModalOpen] = useState(false);
   const [isPharmacistMode, setIsPharmacistMode] = useState(false);
+  const [isChatOpen, setIsChatOpen] = useState(false);
 
   // Reservation & Alert modal targets
   const [targetReservationPharmacy, setTargetReservationPharmacy] = useState<Pharmacy | null>(null);
@@ -346,6 +348,7 @@ export default function App() {
           isPharmacistMode={isPharmacistMode}
           onTogglePharmacistMode={() => setIsPharmacistMode(false)}
           onOpenScanner={() => setIsScannerModalOpen(true)}
+          onOpenChat={() => setIsChatOpen(true)}
         />
         <PharmacistDashboard
           pharmacy={pharmacies[0]} // default partner: WellCare Central 24/7
@@ -373,6 +376,7 @@ export default function App() {
         isPharmacistMode={isPharmacistMode}
         onTogglePharmacistMode={() => setIsPharmacistMode(!isPharmacistMode)}
         onOpenScanner={() => setIsScannerModalOpen(true)}
+        onOpenChat={() => setIsChatOpen(true)}
       />
 
       {/* 2. Emergency Quick Alert Strip */}
@@ -726,6 +730,12 @@ export default function App() {
         onClose={() => setIsReservationsModalOpen(false)}
         reservations={reservations}
         onCancelReservation={handleCancelReservation}
+      />
+
+      {/* Floating n8n Chat Concierge Widget */}
+      <N8nChatWidget
+        isOpen={isChatOpen}
+        onToggle={() => setIsChatOpen((prev) => !prev)}
       />
     </div>
   );

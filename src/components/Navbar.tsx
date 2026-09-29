@@ -1,5 +1,5 @@
 import React from 'react';
-import { Pill, ShieldCheck, Clock, FileText, Store } from 'lucide-react';
+import { Pill, ShieldCheck, Clock, FileText, Store, MessageSquare } from 'lucide-react';
 
 interface NavbarProps {
   activeTab: 'search' | 'generics' | 'emergency247' | 'scanner';
@@ -9,6 +9,7 @@ interface NavbarProps {
   isPharmacistMode: boolean;
   onTogglePharmacistMode: () => void;
   onOpenScanner: () => void;
+  onOpenChat: () => void;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
@@ -19,6 +20,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   isPharmacistMode,
   onTogglePharmacistMode,
   onOpenScanner,
+  onOpenChat,
 }) => {
   return (
     <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200">
@@ -88,6 +90,14 @@ export const Navbar: React.FC<NavbarProps> = ({
           >
             <FileText className="w-4 h-4 text-slate-400" />
             <span>Scan Prescription</span>
+          </button>
+
+          <button
+            onClick={onOpenChat}
+            className="text-teal-700 hover:text-teal-900 transition-colors flex items-center gap-1.5 font-medium"
+          >
+            <MessageSquare className="w-4 h-4 text-teal-600" />
+            <span>Ask n8n Bot</span>
           </button>
         </nav>
 
